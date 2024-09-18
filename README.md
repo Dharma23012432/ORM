@@ -43,9 +43,6 @@ admin.site.register(Players,EmployeeAdmin)
 ```
 
 ## OUTPUT
-
 ![image](https://github.com/rahulramakrishnann/Exp-2-ORM--web/assets/143045415/b2e404af-f088-492e-b606-6ebffece8f02)
-
-
 ## RESULT
 Thus the program for creating a database using ORM hass been executed successfully
