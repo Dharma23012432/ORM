@@ -1,8 +1,12 @@
-# Ex 02 Django ORM Web Application
-## DATE: 13-09-24
+# Ex03 Django ORM Web Application
+## Date:11/09/2024 
 
 ## AIM
-To develop a Django application to store and retrieve data from a Football Players database using Object Relational Mapping(ORM).
+To develop a Django application to store and retrieve data from a bank loan database using Object Relational Mapping(ORM).
+
+## ENTITY RELATIONSHIP DIAGRAM
+
+![alt text](er.png)
 
 ## DESIGN STEPS
 
@@ -16,33 +20,39 @@ Create a new app in Django project
 Enter the code for admin.py and models.py
 
 ### STEP 4:
-Execute Django admin and create 10 Football players
+Execute Django admin and create details for 10 books
 
 ## PROGRAM
+```
+admin.py
 
-```py
-Models.py
+from django.contrib import admin
+from .models import Bankloan,BankloanAdmin
+admin.site.register(Bankloan,BankloanAdmin)
+
+models.py
 
 from django.db import models
 from django.contrib import admin
-class Players(models.Model):
-    jrsy=models.CharField(max_length=20,help_text="Player Jrsy")
-    name=models.CharField(max_length=100)
-    cntry=models.CharField(max_length=100)
-    age=models.IntegerField()
-    height=models.IntegerField()
+class Bankloan (models.Model):
+    Loanid=models.IntegerField(primary_key=True);
+    Name=models.CharField(max_length=100);
+    Accountno=models.IntegerField();
+    Salary=models.IntegerField();
+    Loanamt=models.IntegerField();
+    
 
-class EmployeeAdmin(admin.ModelAdmin):
-    list_display=('jrsy','name','cntry','age','height')
+
+class BankloanAdmin(admin.ModelAdmin):
+    list_display=('Loanid','Name','Accountno','Salary','Loanamt')
+
 ```
-```
-Admin.py
-from django.contrib import admin
-from .models import Players,EmployeeAdmin
-admin.site.register(Players,EmployeeAdmin)
-```
+
 
 ## OUTPUT
-![image](https://github.com/rahulramakrishnann/Exp-2-ORM--web/assets/143045415/b2e404af-f088-492e-b606-6ebffece8f02)
+
+![alt text](output.png)
+
+
 ## RESULT
 Thus the program for creating a database using ORM hass been executed successfully
