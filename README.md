@@ -34,10 +34,9 @@ class Players(models.Model):
 
 class EmployeeAdmin(admin.ModelAdmin):
     list_display=('jrsy','name','cntry','age','height')
-
-
+```
+```
 Admin.py
-
 from django.contrib import admin
 from .models import Players,EmployeeAdmin
 admin.site.register(Players,EmployeeAdmin)
