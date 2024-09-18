@@ -42,6 +42,11 @@ from django.contrib import admin
 from .models import Players,EmployeeAdmin
 admin.site.register(Players,EmployeeAdmin)
 ```
+
+
+
+
+
 ## OUTPUT
 ![image](https://github.com/rahulramakrishnann/Exp-2-ORM--web/assets/143045415/b2e404af-f088-492e-b606-6ebffece8f02)
 ![image](https://github.com/rahulramakrishnann/Exp-2-ORM--web/assets/143045415/94c3d887-112e-4b9b-b83a-7365148fb61f)
