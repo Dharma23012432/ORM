@@ -1,4 +1,6 @@
 # Ex 02 Django ORM Web Application
+
+
 ## DATE: 13-09-24
 
 ## AIM
@@ -20,7 +22,10 @@ Execute Django admin and create 10 Football players
 
 ## PROGRAM
 
-```py
+```
+
+
+py
 Models.py
 
 from django.db import models
@@ -41,6 +46,9 @@ Admin.py
 from django.contrib import admin
 from .models import Players,EmployeeAdmin
 admin.site.register(Players,EmployeeAdmin)
+
+
+
 ```
 
 
