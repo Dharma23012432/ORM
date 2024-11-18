@@ -21,7 +21,7 @@ Execute Django admin and create details for 10 books
 ## PROGRAM
 
 Admin.py
-
+```
 from django.contrib import admin
 from .models import Loan
 
@@ -29,9 +29,9 @@ from .models import Loan
 class LoanAdmin(admin.ModelAdmin):
     list_display = ('loan_id', 'customer_name', 'amount', 'interest_rate', 'duration_months', 'start_date')
     search_fields = ('customer_name', 'loan_id')
-
+```
 Models.py
-
+```
 from django.db import models
 
 class Loan(models.Model):
@@ -47,11 +47,16 @@ class Loan(models.Model):
 
     def __str__(self):
         return f"Loan ID: {self.loan_id} - {self.customer_name}"
-
+```
 
 
 ## OUTPUT
-![web ex3](https://github.com/user-attachments/assets/6b89deb8-e907-4dea-b3bb-b2c7dec8e73a)
+
+![Screenshot (193)](https://github.com/user-attachments/assets/fd308ad4-500c-469e-b43a-db3b81699114)
+![Screenshot (194)](https://github.com/user-attachments/assets/f09ab2b7-9fda-4790-99c5-b1db4ba46488)
+![Screenshot (197)](https://github.com/user-attachments/assets/86fc118a-504d-447a-aca6-a922173b295d)
+
+
 
 ## RESULT
 Thus the program for creating a database using ORM hass been executed successfully
